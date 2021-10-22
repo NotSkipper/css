@@ -1,1 +1,650 @@
+:root {
+    --accent: #032cf7;
+}
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2);
+}
 
+#mLevelCont {
+    display: none!important;
+}
+
+#aHolder, .endAHolder {
+    display: none!important;
+}
+
+#onetrust-consent-sdk {
+    display: none;
+}
+
+#newsHolder {
+    display: none;
+}
+
+.krSocial {
+    display: none;
+}
+
+.imageButton, #editorBtnM {
+    display: none!important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#tlInfHold {
+    display: none;
+}
+
+#loadEditrBtn {
+    display: none;
+}
+
+#weapDisplay {
+    bottom: 30px;
+    right: 1125px;
+}
+
+.weapItem {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.weapIcon {
+    filter: brightness(var(--weapon-icon-brightness)) drop-shadow(2px 2px var(--accent)) drop-shadow(-2px -2px var(--accent)) drop-shadow(-2px 2px var(--accent)) drop-shadow(2px -2px var(--accent)) drop-shadow(4px 4px 0px var(--accent));
+    opacity: 0 !important;
+    transition-duration: 0.25s;
+    height: 0;
+    width: 160px;
+}
+
+.weapIcon[style*="1"] {
+    opacity: 1 !important;
+    height: 80px;
+}
+
+#weapIconMel {
+    margin: 0 !important;
+}
+
+.weapKey {
+    display: none;
+}
+
+#timerDisplay {
+    position: fixed;
+    left: 50%;
+    bottom: 91%;
+    transform: translateX(-50%);
+    background-color: transparent;
+}
+
+
+#ammoDisplay {
+    background-color: transparent !important;
+    background-image: linear-gradient(90deg, var(--accent), var(--accent));
+    background-position-y: 92px;
+    border-radius: 0px;
+    padding: 0;
+    padding-bottom: 32px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0 !important;
+    position: fixed;
+    bottom:2%;
+    left: 58.5%;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+#ammoVal {
+    font-size: 64px;
+    color: var(--accent);
+    text-shadow: 2px 2px 0px #000 !important;
+}
+
+#ammoMax {
+    display: none;
+}
+
+#mLevelContV {
+    font-size:20px;
+}
+
+#mLevelContV,#mailIcon {
+    color:var(--accent) !important;
+}
+
+#mailIcon:hover {
+    opacity:1;
+    transform:scale(1.1);
+}
+
+.bigMFeatBarI {
+  display: none!important;
+}
+
+.headerBarLeft,#mLevelCont {
+    background-color:transparent;
+}
+
+.headerBarRight {
+    background-color: transparent;
+}
+
+#mainLogo {
+    content: url(https://media.discordapp.net/attachments/900463655727013998/900508701553737778/Logooo.png?width=406&height=406);
+}
+
+#healthValueHolder {
+    position: fixed;
+    right: calc(50% + 128px);
+    bottom: 30px;
+    background-color: transparent;
+}
+
+#healthValue {
+    font-size: 64px;
+    color: #e3e3e3; !important
+    text-shadow: 2px 2px 0px #000 !important;
+}
+
+#maxHP {
+    display: none;
+}
+
+#healthBar {
+    position: fixed;
+    width: 200px;
+    display: flex;
+    direction: rtl;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 12px;
+    bottom: 30px;
+    right: calc(50% + 128px);
+    background-color: transparent;
+}
+ 
+.healthBarSeg {
+    width: -webkit-fill-available;
+    margin-right: -1px;
+    background-color: transparent;
+}
+
+.hpBSeg {
+    box-shadow: none;
+}
+
+#healthValueHolder {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: calc(50% - 300px);
+    bottom: 14px;
+    left: 780px;
+    background-color: transparent;
+}
+
+#healthValue {
+    color: var(--accent);
+    font-size: 64px;
+    text-shadow: 0px 0px var(--accent);
+    bottom: 100%;
+}
+
+#healthValue::after {
+    content: "HP";
+    font-size: 13px;
+    margin-left: 76px;
+    color: var(--hp-ammo);
+    text-shadow: 4px 2px var(--accent);
+
+}
+
+#maxHP {
+    display: none;
+}
+
+#challIcon {
+    display: none;
+}
+
+#healthBar {
+    width: 230px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 0;
+    position: fixed;
+    left: calc(50% - 300px);
+    bottom: 40px;
+    outline: 6px solid var(--hp-ammo);
+}
+
+.healthBarSeg {
+    width: -webkit-fill-available;
+    margin: 0 -1px;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.hpBSeg {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#subLogoButtons {
+    bottom: 72px;
+    transform: translate(-50%,0);
+}
+
+#subLogoButtons>.button {
+    padding: 0 !important;
+    margin: 0 16px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    font-size: 24px !important;
+    transition-duration: 0.25s;
+}
+
+#subLogoButtons>.button:hover {
+    transform: unset;
+    color: var(--accent);
+}
+
+#menuItemContainer {
+    flex-direction: row;
+    top: unset;
+    bottom: 20px;
+    left: 50%;
+    width: unset;
+    background-color: transparent;
+    transform: translateX(-50%)
+}
+
+#menuItemContainer > div > span {
+    display: none;
+}
+
+.menuItem {
+    background-color: transparent;
+    margin: 0 16px;
+}
+
+.menuItem:hover {
+    border-left: none;
+}
+
+.menuItem .menuItemIcon {
+    display: none;
+}
+
+#uiBase.onMenu #chatHolder {
+    left: 1px;
+}
+
+#uiBase.onMenu #voiceDisplay {
+    left: 330px;
+    bottom: 20px;
+}
+
+#mapInfo:before {
+    transition-duration: 0.55s;
+    content:"LeaderOcto Css";
+    font-size: 20px;
+    margin-right: 20px;
+    color: #032cf7;
+    cursor: pointer;
+}
+
+#mapInfo:hover:before {
+    transition-duration: 0.55s;
+    content:"By El13#2820";
+    font-size: 24px;
+    margin-right: 20px;
+    color: #032cf7;
+}
+
+.endCard {
+    box-shadow: 0 0 8px 2px #032cf7;
+    border-radius: 12px;
+}
+
+#uiBase.onMenu #spectateUI {
+    display: block!important;
+    position: fixed;
+    bottom: 48.5%;
+    top: unset;
+    left: 50%;
+    right: unset;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+}
+
+#uiBase.onMenu #spectateHUD {
+    display: flex;
+    justify-content: center;
+    transform: unset;
+    left: unset;
+}
+
+#uiBase.onMenu #specTeam0, #uiBase.onMenu #spec0, #uiBase.onMenu #spec1, #uiBase.onMenu #specNames, #uiBase.onMenu #specStats, #uiBase.onMenu #specContr, #uiBase.onMenu #specKPDContr, #uiBase.onMenu #specSus, #uiBase.onMenu #specTeam1, #uiBase.onMenu #specGMessage, #uiBase.onMenu #specGameInfo {
+    display: none!important
+}
+
+#uiBase.onMenu #specTimer {
+    display: block!important;
+    font-size: 35px;
+    background-color: transparent;
+    color: rgba(255,255,255,.55)
+}
+
+.endTableN {
+    color: #032cf7
+    text-decoration: none;
+    margin-left: 3px;
+    margin-right: 5px;
+}
+
+#policeButton {
+    margin-right: 10px;
+    margin-left: -80px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 16px;
+    left: -159px;
+    top: -50px;
+}
+
+#customizeButton {
+    opacity:0;
+    position:fixed;
+    right:60px;
+    top:34%;
+    height:450px;
+    text-shadow:-1px -1px 0 #202020, 1px -1px 0 #202020, -1px 1px 0 #202020, 1px 1px 0 #202020, -2px -2px 0 #202020, 2px -2px 0 #202020, -2px 2px 0 #202020, 2px 2px 0 #202020, -3px -3px 0 #202020, 3px -3px 0 #202020, -3px 3px 0 #202020, 3px 3px 0 #202020;
+}
+
+#customizeButton:hover {
+    transform:none;
+}
+
+.classCard {
+    text-shadow: none;
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 8px;
+    height: 228px;
+    line-height: 28px;
+    font-size: 0;
+    transition-duration: 0.25s;
+}
+
+.classCard:hover {
+    font-size: 28px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.classWeap {
+    font-size: 0;
+    height: 0;
+}
+
+.classImgC {
+    margin-top: 12px;
+    transition-duration: 0.25s;
+}
+
+.classCard:hover img {
+    opacity: unset;
+    transform: unset;
+}
+
+.classXPBar {
+    top: unset;
+    bottom: 0;
+    width: -webkit-fill-available;
+    left: -0;
+    height: 4px;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.clsXPBarC {
+    margin: 0;
+    height: 4px;
+    background-color: var(--accent);
+}
+
+.skinCard[style*="#292929"], .noBtnCard[style*="#292929"] {
+    text-shadow: 0 0 2px var(--accent), 0 0 4px var(--accent);
+}
+
+.skinCard, .noBtnCard {
+    border-radius: 8px;
+    border-width: 0 !important;
+    border-bottom-width: 4px !important;
+    background-color: rgba(255,255,255,0.15);
+    width: 155px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.skinCard.blackShad {
+    text-shadow: none;
+}
+
+.noBtnCard {
+    width: 145px;
+}
+
+.sprayImg {
+    margin-left: 20px;
+}
+
+#termsInfo {
+    display: none!important;
+}
+
+.buttonPI {
+    border: 0px solid !important;
+}
+
+.buttonP {
+    border: 0px solid !important;
+}
+
+.buttonR {
+    border: 0px solid !important;
+}
+
+#rankedSoonTm {
+    display: none!important;
+}
+
+.iconRanked {
+    display: none!important;
+}
+
+#menuMiniProfilePic {
+    background-color:transparent;
+    border-radius:100%;
+    content: url(https://media.discordapp.net/attachments/900463655727013998/900508701553737778/Logooo.png?width=406&height=406);
+    margin-right:50px;
+    transform:translateY(0px) translateX(25px) scale(2.5);
+}
+
+#profilePicM {
+    content:url(https://media.discordapp.net/attachments/900463655727013998/900508701553737778/Logooo.png?width=406&height=406);
+    filter:none;
+    border:none;
+}
+
+#menuBtnRanked {
+    border: 0px solid !important;
+}
+
+#loadingBg {
+    background-image: url(https://media.discordapp.net/attachments/900463655727013998/900524285326663702/loading-92.gif?width=812&height=406);
+}
+
+@keyframes legacyloader {
+    from {
+        opacity: 0.7;
+        font-size: 30px;
+    }
+}
+
+#initLoader {
+    display:none;
+}
+
+#instructions > *[style*="transform:scale(1.4);"] {
+    transform:scale(0.7) !important; 
+}
+
+#instructions > * > .lds-ring {
+    width:unset;
+    height:unset;
+}
+
+#instructions > * > .lds-ring > * {
+    display:none;
+}
+
+#instructions > * > .lds-ring::before {
+    content:"LOADING...";
+    position:absolute;
+    top:0;
+    left:0;
+    color:var(--accent);
+    transform:translate(-50%,-75%);
+    font-size:32px; 
+    animation:legacyloader .8s infinite alternate;
+}
+
+#uiBase[style] #instructions > * > .lds-ring::before {
+    content:"CONNECTING...";
+}
+
+.voteHint {
+    display: none!important;
+}
+
+.material-icons.vote {
+    display: none!important;
+}
+
+#modVote {
+    display: none!important;
+}
+
+#reloadMsg {
+    background: none;
+    color: var(--accent);
+}
+
+#streakCount {
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    background-color: transparent;
+    transform: translate(-50%);
+}
+
+#streakIcon {
+    width: 50px;
+    height: 50px;
+    content: url(https://media.discordapp.net/attachments/642047945016868881/829534110476271696/Blue_Streaks.png);
+}
+
+#endTable span[style="color:#F8C55C"] {
+    color: var(--accent) !important;
+}
+
+#uiBase.onMenu #chatHolder {
+    left: 20px;
+}
+
+#chatHolder[style="bottom: 148px;"] {
+    bottom: 30px !important;
+}
+
+#chatList {
+    text-align: center;
+}
+
+#chatList::-webkit-scrollbar {
+    width: 4px;
+}
+
+
+#chatList::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 50px;
+}
+
+#chatList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#chatInput {
+    text-align: center;
+}
+
+.chatItem {
+    color: #fff !important;
+    font-size: 16px;
+    width: -webkit-fill-available;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 0px 0px 2px inset;
+    margin: 0px;
+    background-color: rgba(0,0,0,0.4) !important;
+    border-radius: 0;
+}
+
+
+.weaponChatIcon {
+    filter: brightness(0) drop-shadow(-2px 0px 1px #fff) drop-shadow(0px 0px 1px #fff) drop-shadow(2px 0px 1px var(--accent));
+}
+
+.chatMsg[style*="#ffffff"] {
+    color: #fff !important;
+}
+
+.chatMsg span {
+	color: var(--accent) !important;
+    opacity: 0.75;
+}
+
+.chatMsg span[style="color:#9eeb56"] {
+    color: #ffffff !important;
+}
+
+.chatMsg span[style="color:#fff"] {
+    color: #ffffff !important;
+}
+
+#chatInput {
+    text-align: center;
+    background-color: transparent;
+    border-bottom: 4px solid var(--accent);
+}
+
+#voiceDisplay {
+    display: none;
+}
+
+#chatHolder {
+    transition-duration:0.3s;
+}
+
+#hudClassIcon {
+    content:url(https://media.discordapp.net/attachments/900463655727013998/900508701553737778/Logooo.png);
+}
